@@ -1,0 +1,6 @@
+# Packages pour benchmarks comparatifs
+fatpack>=0.8.0
+rainflow>=3.0.0
+matplotlib>=3.0.0
+memory_profiler>=0.60.0
+

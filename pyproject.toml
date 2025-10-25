@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openrainflow"
+version = "1.0.0"
+description = "High-performance fatigue analysis package with rainflow counting, Eurocode fatigue curves, and Miner's damage calculation"
+readme = "README.md"
+authors = [
+    {name = "OpenRainflow Contributors"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20.0",
+    "numba>=0.56.0",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=0.990",
+]
+parallel = [
+    "joblib>=1.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Pavlishenku/OpenRainflow"
+Repository = "https://github.com/Pavlishenku/OpenRainflow"
+"Bug Tracker" = "https://github.com/Pavlishenku/OpenRainflow/issues"
+
+[tool.setuptools]
+packages = ["openrainflow"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=openrainflow --cov-report=term-missing"
+

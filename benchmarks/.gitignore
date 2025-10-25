@@ -1,0 +1,8 @@
+# Résultats et graphiques générés
+results/
+plots/
+
+# Cache Python
+__pycache__/
+*.pyc
+

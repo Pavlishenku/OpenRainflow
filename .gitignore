@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+test_venv/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.bak
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Benchmarks results (keep structure, ignore some outputs)
+benchmarks/plots/*.png
+!benchmarks/plots/benchmark_complete_report.png
+!benchmarks/plots/benchmarks_final_complete.png
+
+# OS specific
+Thumbs.db
+Desktop.ini
+
+# Project specific temporary files
+show_benchmark_results.py
+quick_test.py
+test_benchmark_quick.py
+fast_benchmarks.py
+generate_benchmark_report.py
+generate_complete_benchmarks.py
+quick_complete_benchmarks.py
+test_install.py
+
+# Internal documentation (not for GitHub users)
+DOCUMENTATION_SETUP.md
+PUBLISHING_GUIDE.md
+*_GUIDE.md
+*_SETUP.md
+INTERNAL_*.md

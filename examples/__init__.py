@@ -1,0 +1,2 @@
+"""Examples for openrainflow package."""
+

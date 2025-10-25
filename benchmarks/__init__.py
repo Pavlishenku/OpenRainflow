@@ -1,0 +1,2 @@
+"""Benchmarks for OpenRainflow package."""
+
